@@ -12,7 +12,22 @@ Jennifer::Config.configure do |conf|
 end
 
 module Activerecord::Test 
+  get "/" do |ctx|
+    posts = Post.all.order(id: :desc)
+    render "src/views/post.ecr", "src/views/layouts/layout.ecr"
+  end
   
+  post "/" do |ctx|
+    posts = [] of Post
+    render "src/views/post.ecr", "src/views/layouts/layout.ecr"
+  end
   
+  post "/reset" do |ctx|
+    Jennifer::Adapter.adapter.truncate(User)
+    Jennifer::Adapter.adapter.truncate(Post)
+    posts = [] of Post
+    render "src/views/post.ecr", "src/views/layouts/layout.ecr"
+  end
+
   Kemal.run
 end

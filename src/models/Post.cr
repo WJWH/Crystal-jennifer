@@ -8,5 +8,5 @@ class Post < Jennifer::Model::Base
     updated_at: Time?
   )
   
-  belongs_to :user
+  belongs_to :user, User
 end
