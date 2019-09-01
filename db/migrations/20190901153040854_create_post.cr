@@ -1,10 +1,8 @@
 class CreatePost < Jennifer::Migration::Base
   def up
     create_table(:posts) do |t|
-      t.string :name, {:size => 30}
-      t.integer :age
-      t.integer :tags, {:array => true}
-      t.field :gender, :gender_enum
+      t.string :title
+      t.text :content
       t.timestamps
     end
   end

@@ -3,6 +3,7 @@ require "json"
 require "jennifer"
 require "jennifer/sam"
 require "jennifer_sqlite3_adapter"
+require "./db/migrations/*"
 
 
 Jennifer::Config.configure do |conf|
