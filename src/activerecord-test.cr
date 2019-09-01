@@ -8,6 +8,7 @@ Jennifer::Config.configure do |conf|
   conf.db = "test.db"
 end
 
-module Activerecord::Test  
+module Activerecord::Test 
   puts "biep!"
+  
 end
