@@ -1,0 +1,34 @@
+version: 1.0
+shards:
+  db:
+    github: crystal-lang/crystal-db
+    version: 0.6.0
+
+  i18n:
+    github: TechMagister/i18n.cr
+    version: 0.2.0
+
+  ifrit:
+    github: imdrasil/ifrit
+    version: 0.1.2
+
+  inflector:
+    github: phoffer/inflector.cr
+    version: 0.1.8
+
+  jennifer:
+    github: imdrasil/jennifer.cr
+    version: 0.8.0
+
+  jennifer_sqlite3_adapter:
+    github: imdrasil/jennifer_sqlite3_adapter
+    version: 0.2.0
+
+  sam:
+    github: imdrasil/sam.cr
+    version: 0.3.1
+
+  sqlite3:
+    github: crystal-lang/crystal-sqlite3
+    version: 0.13.0
+

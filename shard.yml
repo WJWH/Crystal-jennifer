@@ -1,0 +1,20 @@
+name: activerecord-test
+version: 0.1.0
+
+authors:
+  - Wander Hillen <wjw.hillen@gmail.com>
+
+dependencies:
+  jennifer:
+    github: imdrasil/jennifer.cr
+    version: "~> 0.8.0"
+  jennifer_sqlite3_adapter:
+    github: imdrasil/jennifer_sqlite3_adapter
+
+targets:
+  activerecord-test:
+    main: src/activerecord-test.cr
+
+crystal: 0.29.0
+
+license: MIT
