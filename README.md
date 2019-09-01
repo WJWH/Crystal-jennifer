@@ -1,26 +1,22 @@
 # activerecord-test
 
-TODO: Write a description here
+A test repo to play around with:
+- The Jennifer ORM
+- ECR templating
+
+Since I'm only interested in those two things in this repo, don't expect tests or even basic safety features like HTML escaping.
 
 ## Installation
 
-TODO: Write installation instructions here
+`shards install`, then `crystal run src/activerecord-test.cr` should do it.
 
 ## Usage
 
-TODO: Write usage instructions here
-
-## Development
-
-TODO: Write development instructions here
+It'll start a server at localhost:3000, where you can then add posts. All posts added from anywhere will be displayed on the page.
 
 ## Contributing
 
-1. Fork it (<https://github.com/your-github-user/activerecord-test/fork>)
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
+This is just for playing around, I'm not looking for any contributors.
 
 ## Contributors
 
