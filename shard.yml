@@ -5,6 +5,8 @@ authors:
   - Wander Hillen <wjw.hillen@gmail.com>
 
 dependencies:
+  kemal:
+    github: kemalcr/kemal
   jennifer:
     github: imdrasil/jennifer.cr
     version: "~> 0.8.0"
