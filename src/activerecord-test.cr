@@ -18,10 +18,11 @@ module Activerecord::Test
   end
   
   post "/" do |ctx|
-    posts = [] of Post
+    Post.create(title: ctx.params.body["title"], content: ctx.params.body["content"])
+    posts = Post.all.order(id: :desc)
     render "src/views/post.ecr", "src/views/layouts/layout.ecr"
   end
-  
+ 
   post "/reset" do |ctx|
     Jennifer::Adapter.adapter.truncate(User)
     Jennifer::Adapter.adapter.truncate(Post)

@@ -17,6 +17,6 @@ targets:
   activerecord-test:
     main: src/activerecord-test.cr
 
-crystal: 0.29.0
+crystal: 0.30.0
 
 license: MIT
